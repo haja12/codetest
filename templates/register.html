@@ -1,0 +1,52 @@
+<!-- Registration Form -->
+<div class="container page-width logo text-center">
+	<div class="row well">
+
+	<div class="lead text-left pull-left"><a href="#/">Login</a></div>
+	<div class="lead text-right"><a href="#/register">Register</a></div>
+
+	<div ng-if="duplicate == 2" class="text-danger">This username is already exists</div>
+	<br>
+
+	<!-- Success Message -->
+	<div ng-if="written == 1">
+		<div class="row text-center"><h3 class="text-success">Thanks for your registration</h3><br></div>
+	</div>
+
+	<!-- Registration form -->
+	<form name="registerForm" novalidate="" ng-submit="submit(registerForm)">
+		<div class="col-md-24">
+			<input type="text" name="username" placeholder="Username" ng-model="user.username" class="form-control input-md" required autofocus />
+			<span class="text-danger text-left" ng-show="submitted && registerForm.username.$error.required"><li>username is required</li></span>
+		</div>
+		<br><br><br>
+
+		<div class="col-md-24">
+			<input type="password" name="password" placeholder="Password" class="form-control input-md" ng-model="user.password" required />
+			<span class="text-danger text-left" ng-show="submitted && registerForm.password.$error.required"><li>password is required</li></span>
+		</div>
+		<br><br><br>
+
+		<div class="col-md-24">
+			<input type="tel" name="contact_number" placeholder="Contact Number" class="form-control input-md" ng-model="user.contact_number" required />
+			<span class="text-danger text-left" ng-show="submitted && registerForm.contact_number.$error.required"><li>contact number is required</li></span>
+		</div>
+		<br><br><br>
+
+		<div class="col-md-24">
+			<input type="email" name="email_id" placeholder="email id" class="form-control input-md" ng-model="user.email_id" required />
+			<span class="text-danger text-left" ng-show="submitted && registerForm.email_id.$error.required"><li>email is required</li></span>
+			<span class="text-danger text-left" ng-show="submitted && registerForm.email_id.$error.email"><li>Invalid email</li></span>
+		</div>
+		<br><br><br>
+
+		<div class="col-md-24">
+			<input type="text" name="location" placeholder="location" class="form-control input-md" ng-model="user.location" required />
+			<span class="text-danger text-left" ng-show="submitted && registerForm.location.$error.required"><li>location is required</li></span>
+		</div>
+		<br><br><br>
+
+		<div class="col-md-24"><button type="submit" id="btnsubmit" name="btnsubmit" class="btn btn-info" ng-click="submitted=true">Submit</button></div>
+	</form>
+	</div>
+</div>
