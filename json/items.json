@@ -1,0 +1,8 @@
+[
+  {"id":"1", "username":"haja", "item_no":"501", "item_type":"electronics", "item_name":"watch", "status":"processing", "from":"white field", "to":"bommasandra"},
+  {"id":"2", "username":"raghu", "item_no":"502", "item_type":"cloth", "item_name":"shirt", "status":"transit", "from":"bommanahalli", "to":"hosur"},
+  {"id":"3", "username":"vinay", "item_no":"503", "item_type":"toy", "item_name":"remote car", "status":"delivered", "from":"belandur", "to":"mysore"},
+  {"id":"4", "username":"jegan", "item_no":"504", "item_type":"apparels", "item_name":"wallet", "status":"transit", "from":"Tambaram", "to":"Adyar"},
+  {"id":"5", "username":"srini", "item_no":"505", "item_type":"food", "item_name":"nuts", "status":"processing", "from":"Palakari", "to":"Malakottai"},
+  {"id":"6", "username":"satish", "item_no":"506", "item_type":"electronics", "item_name":"watch", "status":"delivered", "from":"North Chennai", "to":"Tambaram"}
+]
