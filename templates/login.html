@@ -1,0 +1,29 @@
+<div class="container page-width logo text-center">
+<div class="row well">
+
+<div class="lead text-left pull-left"><a href="#/">Login</a></div>
+<div class="lead text-right"><a href="#/register">Register</a></div>
+
+<div ng-if="auth == ''" class="text-danger">You are not authorized </div>
+<br>
+
+<form name="loginForm" novalidate="" ng-submit="submit(loginForm)">
+	<div class="control-group">
+		<div class="col-md-24">
+			<input type="text" name="username" placeholder="Username" ng-model="user.username" class="form-control input-md" required autofocus />
+			<span class="text-danger text-left" ng-show="submitted && loginForm.username.$error.required"><li>username is required</li></span>
+		</div>
+		<br><br><br>
+
+		<div class="col-md-24">
+			<input type="password" name="password" placeholder="Password" class="form-control input-md" ng-model="user.password" required>
+			<span class="text-danger text-left" ng-show="submitted && loginForm.password.$error.required"><li>password is required</li></span>
+		</div>
+		<br><br><br>
+	</div>
+
+	<button type="submit" class="btn btn-info btn-large" ng-click="submitted=true">Submit</button>
+</form>
+
+	</div>
+</div>
